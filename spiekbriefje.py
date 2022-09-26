@@ -32,6 +32,9 @@ print('   ')
 #                       x btw = btwbedrag
 #######################################################
 #constanten in hoofdletters
+# int is een heel getal
+# float is kommagetal
+# string is een zin of een word
 
 
 
