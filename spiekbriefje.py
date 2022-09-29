@@ -31,7 +31,7 @@ print('   ')
 # bedrag-incl/(100+btw) x 100 = bedrag - ep
 #                       x btw = btwbedrag
 #######################################################
-#constanten in hoofdletters
+# constanten in hoofdletters
 # int is een heel getal
 # float is kommagetal
 # string is een zin of een word

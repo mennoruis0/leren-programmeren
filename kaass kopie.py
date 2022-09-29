@@ -4,13 +4,13 @@ from cgi import print_arguments
 geel = input('is de kaas geel?')
 if geel == 'ja':
     gaten = input('zitten er gaten in?')
-    if gaten == 'nee':
+    if gaten == 'ja':
         hard = input('is deze kaas hard als steen?')
         if hard == 'ja':
             print('De kaas die jij bedoelt is de Parmigiano Reggiano.')
         if hard == 'nee':
             print('De kaas die jij bedoelt is de Goudse kaas.')
-    elif gaten == 'ja':
+    elif gaten == 'nee':
         duur = input('is de kaas belachelijk duur?')
         if duur == 'ja':
             print('De kaas die jij bedoelt is de Emmenthaler.')
