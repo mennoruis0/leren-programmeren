@@ -35,8 +35,9 @@ print('   ')
 # int is een heel getal
 # float is kommagetal
 # string is een zin of een word
-
-
+# conditie = voorwaarde if
+# (995//200) = andwoord
+# (995%200) = restanten
 
 
 
