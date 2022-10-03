@@ -5,6 +5,21 @@
 # vraag of iemand member is
 
 
+#vraag = input('waar speel je op')
+#if vraag == 'console':
+    #print('de game kost 55 euro op je console naar keuze')
+    #if member = input('ben je een member?')
+    #member = input('ben je een member?')
+    #if member == 'ja':
+        #print('door je membership kost het nu maar 40 euro')
+        
+        #if vraag == 'pc':
+    #print('de game kost 45 euro op je pc')
+
+#if platform == 'console' and member == 'ja':
+    #print(F'u krijgt {MEMBER_KORTING} korting van de game prijs af')
+    #prijs = CONSOLE_PRIJS - MEMBER_KORTING
+
 CONSOLE_PRIJS = 55
 PC_PRIJS = 45
 MEMBER_KORTING = 15
@@ -24,22 +39,3 @@ print(f'U bent {platform} gamer, dan kost de game: {prijs} Euro')
 
 
 
-
-if samsung_prijs == iphone_prijs:
-    print(f'bijde telefoons zijn {iphone_prijs}Euro')
-    print('het advies is dus om een Iphone te kopen')
-
-
-prijs_iphone =  int(input('hoeveel kost de Iphone?'))
-prijs_galaxy = int(input('hoeveel kost de Galaxy?'))
-
-verschil = prijs_iphone - prijs_galaxy
-
-if verschil > 50:
-    advies = 'Galaxy'
-    niet = 'Iphone'
-    aankoop_prijs = prijs_galaxy
-    niet_prijs = prijs_iphone
-else:
-advies = 'iphone'
-niet =
