@@ -99,6 +99,8 @@ stop = input('wilt u stoppen? ')
 if stop == 'ja':
     raise NameError('Ratio')
 
+for c in "hallo wereld":
+    s
 
 
 
