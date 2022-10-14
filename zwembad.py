@@ -9,9 +9,11 @@ afmeting = lengte * breedte * diepte
 
 uitgraven = 25 * afmeting
 afvoeren = 32.50 * afmeting
-totaal = uitgraven + afvoeren
+voorrijkosten = 1
+totaal = uitgraven + afvoeren + voorrijkosten
 
-print(f' offerte voor zwembad van {lengte} bij {breedte} bij {diepte} meter (inhoud: xx m3) ')
-print(f' uitgraven:        € {uitgraven}')
-print(f' afvoeren grond:   € {afvoeren}')
-print(f' totaal:           € {totaal}')
+print(f' Offerte voor zwembad van {lengte} bij {breedte} bij {diepte} meter (inhoud: xx m3) ')
+print(f' Uitgraven:        € {uitgraven}')
+print(f' Afvoeren grond:   € {afvoeren}')
+print(f' Voorrijkosten:    € {voorrijkosten}')
+print(f' Totaal:           € {totaal}')

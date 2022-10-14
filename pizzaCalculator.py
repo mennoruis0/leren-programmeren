@@ -1,5 +1,6 @@
 #Menno Ruis,Pizza calculator
 
+a = 0
 
 small_prijs = 6
 medium_prijs = 8
