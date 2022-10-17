@@ -22,7 +22,7 @@ if bessen == "wolfskers":
     print("Helaas, het waren giftige bessen")
     print("Je bent nu dood")
     print("")
-    print("EINDE")
+    print("GAMEOVER")
     exit()
 
 elif bessen == "rozenbottel":
@@ -95,3 +95,4 @@ elif locatie == "bouwen":
     print("Een vliegtuig spot het en een dag later wordt je gered door een helicopter.")
     print("")
     print(" GOOD ENDING")
+22
