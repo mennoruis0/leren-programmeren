@@ -1,7 +1,6 @@
-from socket import J1939_EE_INFO_NONE
 
-
-for x in range(30):
-    print(30-x)
+x = -1
+while x <= 29:
+    print(29 -x)
+    x = x + 1
 print("de raket wordt gelancheerd!!!!")
-
