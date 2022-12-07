@@ -10,6 +10,5 @@ for x in range(9):
     else:
         robotArm.moveRight()
         robotArm.drop()
-        robotArm.moveLeft()
         robotArm.moveRight()
 robotArm.wait()

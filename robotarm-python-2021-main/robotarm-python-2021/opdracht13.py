@@ -2,7 +2,6 @@ from RobotArm import RobotArm
 robotArm = RobotArm()
 robotArm.randomLevel(1,7)
 robotArm.speed = 2
-
 blok = 1
 loop = 1
 while loop == 1:
@@ -17,6 +16,4 @@ while loop == 1:
         for x in range(blok):
             robotArm.moveLeft()
         blok = blok + 1
-
-
 robotArm.wait()
