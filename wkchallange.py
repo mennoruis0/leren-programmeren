@@ -1,0 +1,6 @@
+land1 = input('welk land wil je in groep A:')
+land2 = input('welk land wil je in groep A: ')
+land3 = input('welk land wil je in groep A: ')
+wedstrijd1 = input('welk land wint er?')
+wedstrijd2 = input('welk land wint er?')
+wedstrijd3 = input('welk land wint er?')
