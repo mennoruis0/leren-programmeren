@@ -1,49 +1,42 @@
-
 import random
-getal= random.randint(1,1000)
-raad = 0
-min = 1
-max = 1000
-score = 10
-goed=0
-heel = " "
 ronde = 1
-print('in dit spel ga je max 10 keer een getal raden tussen 1 en 10000 voor 20 rondes ')
-print('als je met het spel wilt stoppen typ: 9999 ')
-while ronde < 11:
-    print(f"ronde: {ronde}")
-    print(f"u mag nog {score} keer raden deze ronde!")
-    raad = int(input(f"raad een getal tussen {min}/{max}: "))
-    som = abs(getal - raad)
-    if getal == 9999:
-        break
-    if som <= 50:
-        print(f"je bent{heel}warm")
-    if som <= 20:
-        heel = " heel "
-    if raad > getal:
-        max = raad
-        print("lager")
-    elif raad < getal:
-        min = raad
-        print ("hoger")
-    elif raad == getal:
-        print("geraden!")
-        getal = random.randint(1,1000)
-        goed+=1
-        score=11
-        min=1
-        max=1000
-        print(f"u heeft er {goed} goed")
-        ronde+=1
-    if score == 1:
-        print(f"het getal was {getal}")
-        print("er word een nieuw getal gekozen")
-        teller = 11
-        min=1
-        max=1000
-        getal = random.randint(1,1000)
-        print(f"u heeft er {goed} goed")
-        ronde+=1
-    score -=1
-print (f"EINDE\nje had er {goed} goed! het getal was:{getal}")
+totaal = 10
+print('in dit spel raadje een getal tussen de 1 en de 1000')
+print('je mag 10 keer raden')
+print('dit spel heeft maximaal 20 rondes, maar je kan stoppen na elke ronde door 1234 te typen')
+print('Voor elk geraden getal wordt de score opgehoogd met 1')
+for x in range(20):
+    for x in range(10):
+        print(f'ronde: {ronde}')
+        ronde = ronde + 1
+        cijfer = random.randint(1, 1000)
+        print(cijfer)
+        kansen = 0
+        while kansen < 10:
+            print('raad wat het getal is in 10 kansen')
+            print(f'je hebt nog {totaal} kansen deze ronde')
+            raden = input()
+            raden = int(raden)
+            totaal -= 1
+            kansen = kansen + 1
+            som = cijfer - raden
+
+            if raden < cijfer:
+                print('hoger')
+
+            if cijfer - raden <=20:
+                print("Je bent heel warm")
+
+            elif cijfer - raden <=50:
+                print("Je bent warm")
+
+            if raden > cijfer:
+                print('lager')
+
+            if raden == cijfer:
+                break
+
+
+        if raden == cijfer:
+            kansen = str(kansen)
+            print(f'je hebt het cijfer in {kansen} kansen')
