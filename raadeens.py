@@ -1,42 +1,40 @@
 import random
-ronde = 1
-totaal = 10
-print('in dit spel raadje een getal tussen de 1 en de 1000')
+rondes = 1
+hoeveelheid = 10
+a = -20
+b = -50
+print('in dit spel raad je een getal tussen de 1 en de 1000')
 print('je mag 10 keer raden')
-print('dit spel heeft maximaal 20 rondes, maar je kan stoppen na elke ronde door 1234 te typen')
-print('Voor elk geraden getal wordt de score opgehoogd met 1')
+print('dit spel heeft maximaal 20 rondes')
 for x in range(20):
     for x in range(10):
-        print(f'ronde: {ronde}')
-        ronde = ronde + 1
-        cijfer = random.randint(1, 1000)
-        print(cijfer)
+        print("")
+        print(f'ronde: {rondes}')
+        rondes = rondes + 1
+        getal = random.randint(1, 1000)
+        print(getal)
         kansen = 0
         while kansen < 10:
-            print('raad wat het getal is in 10 kansen')
-            print(f'je hebt nog {totaal} kansen deze ronde')
+            print(f'je hebt nog {hoeveelheid} pogingen deze ronde')
             raden = input()
             raden = int(raden)
-            totaal -= 1
+            hoeveelheid -= 1
             kansen = kansen + 1
-            som = cijfer - raden
-
-            if raden < cijfer:
-                print('hoger')
-
-            if cijfer - raden <=20:
-                print("Je bent heel warm")
-
-            elif cijfer - raden <=50:
-                print("Je bent warm")
-
-            if raden > cijfer:
-                print('lager')
-
-            if raden == cijfer:
+            som = getal - raden
+            print(f'de som is {som}')  
+            if raden < getal:
+                print('ga hoger')
+            if abs(raden - getal <20):
+                print("heel warm!!!")
+            elif abs(raden - getal <50):
+                print("warm!!!")
+            if raden > getal:
+                print('ga lager')
+            if raden == getal:
+                print('dat was goed!')
                 break
-
-
-        if raden == cijfer:
+                
+        if raden == getal:
             kansen = str(kansen)
-            print(f'je hebt het cijfer in {kansen} kansen')
+            print(f'je hebt het getal geraden in {kansen} kansen')
+
