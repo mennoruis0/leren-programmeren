@@ -1,28 +1,36 @@
-import random
+import random 
 lijst1 = []
+check = True
 
 print(" ")
 print("in dit programma kan je met 3 of meer mensen lootjes trekken")
 
-while True:
-        name = input('geef de naam van één van de deelnemers: ')
-        lijst1.append(name)
-        if input("zijn alle namen ingevult?: ") == "J" or "j" or "ja":
-            if len(lijst1) >=3:
-                break
-            else: 
-                print('dat zijn niet genoeg namen')
-                continue
+while check:
+    toevoegen = input("zijn alle namen ingevult?: ")
+    if toevoegen == "J" or "j" or "ja":
+        naam_kiezen = input('geef de naam van één van de deelnemers: ')
+        if naam_kiezen not in lijst1:
+            lijst1.append(naam_kiezen)
+        elif naam_kiezen in lijst1:
+            print('deze naam zit al in de lijst')
+    elif toevoegen == "nee" and len(lijst1) < 3:
+        print("er zitten nog niet minimaal 3 woorden in")
+    else:
+        check = False
+        
+           
 lijst2 = lijst1.copy()
 random.shuffle(lijst2)
-ok = False
-while not ok:
+check2 = True
+
+while check2:
     random.shuffle(lijst2)
-    for lootje in range(len(lijst1)):
-        if lijst1[lootje] == lijst2[lootje]:
-            ok = False
+    for x in range(len(lijst1)): # x = to store the integer value
+        if lijst1[x] == lijst2[x]:
+            check2 = False
             break
+
         else:
-            ok = True
+            check2 = True
 for x in range(len(lijst1)):
-    print(f"{lijst1[x]} heeft {lijst2[x]}")
+    print(f"{lijst1[x]} heeft {lijst2[x]}'s lootje getrokken")
