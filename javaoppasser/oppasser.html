@@ -1,0 +1,20 @@
+<script>
+
+const POTEN_GIRAF = 4;
+const POTEN_ZEBRA = 4;
+const POTEN_STRUISVOGEL = 2;
+
+let aantal_zebras = parseInt(input('hoeveel giraffen ziet u? '));
+let aantal_giraffen = int(input('en hoeveel struisvogels ziet u? '));
+let aantal_struisvogels = int(input("en hoeveel zebra's ziet u? "));
+
+function bereken_poten(giraffen, zebras, struisvogels){
+
+    let aantal_poten = zebras * POTEN_ZEBRA + giraffen * POTEN_GIRAF + struisvogels * POTEN_STRUISVOGEL
+
+    return aantal_poten
+}
+console.log(bereken_poten(aantal_giraffen,aantal_zebras,aantal_struisvogels));
+
+
+</script>
